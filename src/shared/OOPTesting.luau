@@ -17,7 +17,7 @@ function Apple:eat(part: Part)
     print("Apple ate.")
 end
 
-function Apple:destroy(self)
+function Apple:destroy(self: self)
     setmetatable(self, nil)
 end
 
