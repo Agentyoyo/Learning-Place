@@ -1,3 +1,5 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
 local function initModule(moduleScript)
 	local success, result = pcall(require, moduleScript)
 
@@ -18,6 +20,6 @@ local function loadModulesInFolder(folder)
 	end
 end
 
-loadModulesInFolder(script)
+loadModulesInFolder(ReplicatedStorage.Shared)
 
 print("Server-Side")

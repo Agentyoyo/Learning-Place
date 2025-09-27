@@ -1,4 +1,7 @@
-local Apple = require(game.ReplicatedStorage.Shared.OOPTesting)
+local Apple = require(game.ReplicatedStorage.Shared.OOP)
 
-Apple.new()
+local myApple = Apple.new()
 
+task.wait(5)
+
+myApple:Eat()
